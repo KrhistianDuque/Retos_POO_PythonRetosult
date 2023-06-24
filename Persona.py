@@ -40,8 +40,8 @@ class Persona():
         print("Su genero es de_ ",self.__sexo)
 
     def calcularlmc(self,peso):
-        elevacionestatura=math.pow(self.estatura,2)
-        pesoActual=peso/elevacionestatura
+        elevacionestatura=math.pow(self.__estatura,2)
+        pesoActual=self.__peso/elevacionestatura
         conclusion=""
         print("Su imc es de: ",pesoActual)
         if(pesoActual<=20):
