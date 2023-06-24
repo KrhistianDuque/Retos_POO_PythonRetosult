@@ -19,25 +19,25 @@ class Persona():
 
 
     def pedirDatos(self):
-        self.tipoDoc=input("Por favor digite su tipo de documento: ")
-        self.documento=int(input("Indique su documento: "))
-        self.nombre=input("Digite su nombre: ")
-        self.apellido=input("Digite su apellido: ")
-        self.peso=float(input("Digite su peso: "))
-        self.estatura=float(input("Digite su estatura: "))
-        self.edad=int(input("Digite su edad: "))
-        self.sexo=input("Digite su genero: ")
+        self.__tipoDoc=input("Por favor digite su tipo de documento: ")
+        self.__documento=int(input("Indique su documento: "))
+        self.__nombre=input("Digite su nombre: ")
+        self.__apellido=input("Digite su apellido: ")
+        self.__peso=float(input("Digite su peso: "))
+        self.__estatura=float(input("Digite su estatura: "))
+        self.__edad=int(input("Digite su edad: "))
+        self.__sexo=input("Digite su genero: ")
 
 
     def mostrarDatos(self):
-        print("Su tipo de documento es ",self.tipoDoc)
-        print("Su numero de documento es ",self.documento)
-        print("Su nombre es",self.nombre)
-        print("Su apellido es",self.apellido)
-        print("Su peso es de:  ",self.peso)
-        print("Su estatura es de: ",self.estatura)
-        print("Su edad es: ",self.edad)
-        print("Su genero es de_ ",self.sexo)
+        print("Su tipo de documento es ",self.__tipoDoc)
+        print("Su numero de documento es ",self.__documento)
+        print("Su nombre es",self.__nombre)
+        print("Su apellido es",self.__apellido)
+        print("Su peso es de:  ",self.__peso)
+        print("Su estatura es de: ",self.__estatura)
+        print("Su edad es: ",self.__edad)
+        print("Su genero es de_ ",self.__sexo)
 
     def calcularlmc(self,peso):
         elevacionestatura=math.pow(self.estatura,2)
